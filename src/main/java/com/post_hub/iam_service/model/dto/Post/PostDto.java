@@ -1,0 +1,25 @@
+package com.post_hub.iam_service.model.dto.Post;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.io.Serializable;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
+@Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+
+public class PostDto implements Serializable {
+
+    private Integer id;
+    private String title;
+    private String content;
+    private Integer likes;
+    private LocalDateTime created;
+
+}
